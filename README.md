@@ -1,6 +1,12 @@
 dfdgf
 =====
 
+  <dependency>
+  <groupId>org.json</groupId>
+  <artifactId>json</artifactId>
+  <version>20180813</version>
+  </dependency>  
+
 public class XMLToJSONConverterTest {
 
     public static int PRETTY_PRINT_INDENT_FACTOR = 4;
