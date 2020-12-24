@@ -1,5 +1,21 @@
 dfdgf
 =====
+<form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()">
+  <div *ngFor="let form_elem of formTemplate">
+  <div [ngSwitch]="form_elem.type">
+    <div>
+      <label>{{form_elem}}</label>
+      <input type="text" formControlName="{{form_elem}}"/>
+    </div>
+    <div *ngSwitchCase="'number'">
+      <label>{{form_elem}}</label>
+      <input type="number" formControlName="{{form_elem}}"/>
+    </div>
+
+  </div>  
+  </div>
+  <input type="submit" value="save"/>
+</form>
 
   <dependency>
   <groupId>org.json</groupId>
