@@ -1,0 +1,6 @@
+{
+    "url":{
+    "apiUrl": "http://localhost:583571/"
+    },
+    "elementArray":[ "Ford", "BMW", "Fiat" ]
+}
